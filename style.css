@@ -1,0 +1,220 @@
+.hero-bg{
+background-color: #F7F193;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.image img {
+    width: 40px;
+    height: auto;
+}
+
+/* ----------font---------- */
+
+h1 {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2,h4,h6 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #593624;
+}
+
+
+p,h3 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-brown {
+    color: #593624;
+}
+
+.japan {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 20px; 
+  color: #593624;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.buy {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ----------color--------- */
+
+footer {
+    background-color: #593624;
+}
+
+.green-bg {
+background-color: #D3DB54;
+}
+
+.paragraph {
+    text-indent: 2em;
+}
+
+.green-white {
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+}
+
+.white-green {
+    background: linear-gradient(to bottom, #ffffff, #D3DB54 );
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 63px;
+  height: 4px;
+  background-color: #E65631;
+  margin: 20px 0 0;
+}
+
+.title-japan::before {
+  content: "";
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: #AF5B35;
+    margin: 0px auto 30px;
+}
+
+/* ----------จุดหัวข้อ---------- */
+
+.dot::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #548a33;
+  border-radius: 50%;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* ----------พื้นหลังคำถาม---------- */
+
+.accordion-button {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #F7F193;
+  color: #000;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* ----------ปุ่ม BUY NOW----------- */
+
+.buy-btn {
+    background-color: #548a33;
+    color: white;
+    border: 1px solid #548a33;
+    font-size: 20px;
+    padding: 14px 30px;
+}
+
+.buy-btn:hover {
+    background-color: white;
+    color: #548a33;
+}
+
+/* ----------หัวใจ---------- */
+
+.heart-button label {
+    cursor: pointer;
+    font-size: 70px;
+    color: #E65631;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.heart-button input {
+    display: none;
+}
+
+.heart-button label::before {
+    content: "♡"; 
+}
+
+.heart-button input:checked + label::before {
+    content: "♥";
+}
+
+/* เอฟเฟกต์ตอนกด */
+.heart-button label:active {
+    transform: scale(1.3);
+}
+
+/* ----------ข้อความจัดกลาง---------- */
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h3 {
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    margin: 0;
+}
+
+/* ----------หัวข้อ---------- */
+
+.book-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 40px;
+}
+
+.book-item h4 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.book-item h4::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #548a33;
+    border-radius: 50%;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.book-item p {
+    margin: 0;
+    padding-left: 30px;
+    font-size: 18px;
+}
