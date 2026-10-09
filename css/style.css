@@ -85,6 +85,8 @@ background-color: #D3DB54;
   padding: 20px;
 }
 
+/* ----------ขีดใต้หัวข้อ---------- */
+
 .title::after {
   content: "";
   display: block;
@@ -92,6 +94,15 @@ background-color: #D3DB54;
   height: 4px;
   background-color: #E65631;
   margin: 20px 0 0;
+}
+
+.title-middle::after {
+  content: "";
+  display: block;
+  width: 63px;
+  height: 4px;
+  background-color: #E65631;
+  margin: 20px auto 0;
 }
 
 .title-japan::before {
@@ -189,11 +200,17 @@ background-color: #D3DB54;
 }
 
 /* ----------หัวข้อ---------- */
-
 .book-info {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* เปลี่ยนจาก 3 เป็น 2 คอลัมน์ */
     gap: 30px 40px;
+}
+
+/* รองรับการแสดงผลบนมือถือให้เรียง 1 คอลัมน์ ไม่ให้บีบแน่นเกินไป */
+@media (max-width: 576px) {
+    .book-info {
+        grid-template-columns: 1fr;
+    }
 }
 
 .book-item h4 {
